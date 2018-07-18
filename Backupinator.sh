@@ -12,7 +12,7 @@ source_backup_name_1=/insert_path_1_here/*
 source_backup_name_2=/insert_path_2_here/*
 source_backup_name_3=/insert_path_3_here/*
 
-destination=/insert_path_destination_here/...
+destination=/insert_path_destination_here/
 
 #####Variable###############
 #####Start Backups##########
@@ -23,7 +23,7 @@ tar -cpzf $destination/$backup_name_3 $source_backup_name_3 &
 
 wait
 
-ls /insert_path_destination_here/... > ListTemp
+ls /insert_path_destination_here/ > ListTemp
 
 for i in `cat ListTemp`
 do
